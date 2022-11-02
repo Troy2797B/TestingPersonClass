@@ -90,7 +90,6 @@ public class TestPerson {
 
         // When
         person.setAge(expected);
-
         // Then
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
