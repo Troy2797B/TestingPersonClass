@@ -173,11 +173,11 @@ public class TestPerson {
     @Test
     public void testSetAreEarsPierced() {
         Person person = new Person();
-        double expected = 300;
+        boolean expected = false;
 
-        person.setWeight(expected);
-        double actual = person.getWeight();
-        Assert.assertEquals(expected, actual, 0.0);
+        person.setAreEarsPierced(expected);
+        boolean actual = person.getAreEarsPierced();
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testGetSex() {
@@ -190,15 +190,39 @@ public class TestPerson {
     }
     @Test
     public void testSetSex() {
+        Person person = new Person();
+        char expected = 'f';
+
+        person.setSex(expected);
+        char actual = person.getSex();
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testGetHairColor() {
+        Person person = new Person();
+        String expected = "brown";
+
+        person.setHairColor(expected);
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testSetHairColor() {
+        Person person = new Person();
+        String expected = "brown";
+
+        person.setHairColor(expected);
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testGetHeightInches() {
+        Person person = new Person();
+        int expected = 66;
+
+        person.setHeightInches(expected);
+        int actual = person.getHeightInches();
+        Assert.assertEquals(expected, actual);
     }
 }
 
